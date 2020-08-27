@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <title>Animated Template</title>
+    <!-- Loading JS file as defer: https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript#use_async_or_defer -->
+    <!-- AOS.js -->
+    <!-- AOS GitHub URL: https://github.com/michalsnik/aos -->
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script defer src="aos-animation.js"></script>
+    <!-- Navigation Script -->
+    <script defer src="nav.js"></script>
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="favicon.png">
     <!-- Font Awesome -->
@@ -741,20 +748,5 @@
   </footer>
   <!-- End of Footer Section -->
 </body>
-<!-- AOS.js -->
-<!-- AOS GitHub URL: https://github.com/michalsnik/aos -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js" ></script>
-<script>
-  AOS.init({
-    delay: 200, // values from 0 to 3000, with step 50ms
-    duration: 1500, // values from 0 to 3000, with step 50ms
-  });
-</script>
-<!-- Navigation Script -->
-<script>
-  function toggleNavbar(collapseID) {
-    document.getElementById(collapseID).classList.toggle("hidden");
-    document.getElementById(collapseID).classList.toggle("block");
-  }
-</script>
+
 </html>
